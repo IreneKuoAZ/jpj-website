@@ -113,3 +113,8 @@ html,body{max-width:100%;overflow-x:hidden}
 
 .brand img{display:block;height:32px;width:auto}
 
+.demo select,.demo textarea{background:transparent;border:0;border-bottom:2px solid #71808a;color:var(--ink);display:block;font:16px 'Space Grotesk';margin-top:9px;outline:none;padding:7px 0 12px;width:100%}
+.demo textarea{resize:vertical}
+.demo select:focus,.demo textarea:focus{border-color:#613faf;box-shadow:0 2px 0 #613faf}
+.demo label span{color:#59646a;letter-spacing:0;text-transform:none}
+
