@@ -101,6 +101,7 @@ html,body{max-width:100%;overflow-x:hidden}
 }
 @media (max-width:760px){
   .workflow-steps{grid-template-columns:1fr;row-gap:0}
+  .workflow-steps li+li{padding-left:22px}
   .menu-toggle{align-items:center;display:inline-flex;justify-content:center;min-height:44px}
   .site-header nav>a{align-items:center;display:flex;min-height:44px}
 }
