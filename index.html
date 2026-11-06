@@ -21,6 +21,7 @@
     </header>
     <main>
       <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-canvas" aria-hidden="true"></div>
         <div class="hero-copy container">
           <p class="eyebrow">Intelligence for government resellers</p>
           <h1 id="hero-title">Government sales are complex.<br /><em>Your CRM shouldn’t be.</em></h1>
@@ -70,6 +71,15 @@
         window.setTimeout(()=>{isSectionScrolling=false},700);
       },{passive:false});
 
+    </script>
+    <script type="importmap">
+      { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.min.js" } }
+    </script>
+    <script type="module">
+      import { initHeroRibbons } from './assets/hero-ribbons.js';
+      initHeroRibbons(document.querySelector('.hero-canvas'), {
+        speed: 1, intensity: 1, lines: 0.45, lineWidth: 0.3, grid: 1,
+      });
     </script>
   </body>
 </html>
