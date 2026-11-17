@@ -80,7 +80,16 @@ html,body{max-width:100%;overflow-x:hidden}
 .workflow-steps li:before{background:var(--accent);border:1px solid var(--accent);content:"";height:7px;left:-4px;position:absolute;top:-5px;transform:rotate(45deg);width:7px}
 .workflow-steps h3{font-size:25px;margin:30px 0 12px}
 .workflow-steps p{font-size:12px;max-width:220px}
-@media(max-width:760px){.core-capabilities,.workflow{padding-block:86px}.core-grid{grid-template-columns:1fr;margin-top:50px}.core-grid article{min-height:0;padding:28px}.core-grid i{margin-top:38px}.core-grid h3{font-size:29px}.workflow-steps{grid-template-columns:1fr;margin-top:50px}.workflow-steps li,.workflow-steps li+li{border-right:0;border-bottom:1px solid #31434d;padding:20px 0 26px 22px}.workflow-steps h3{margin-top:20px}}
+.sales-paths{border-top:1px solid #31434d;display:grid;grid-template-columns:repeat(2,1fr);margin-top:75px}
+.sales-paths article{border-bottom:1px solid #31434d;min-height:300px;padding:30px 48px 36px 0}
+.sales-paths article+article{border-left:1px solid #31434d;padding-left:48px}
+.sales-paths span{color:var(--accent);font:11px 'IBM Plex Mono'}
+.sales-paths h3{font-size:clamp(30px,3vw,42px);line-height:1.1;margin:38px 0 18px}
+.sales-paths p{font-size:14px;max-width:430px}
+.sales-paths strong{color:var(--text);display:block;font:11px 'IBM Plex Mono';letter-spacing:.12em;margin-top:32px;text-transform:uppercase}
+.sales-paths strong+p{color:var(--text-secondary);font-size:13px;margin-top:9px}
+.workflow-connection{color:var(--text);font:500 clamp(23px,2.5vw,34px)/1.15 'Space Grotesk';margin-top:38px;max-width:620px}
+@media(max-width:760px){.core-capabilities,.workflow{padding-block:86px}.core-grid{grid-template-columns:1fr;margin-top:50px}.core-grid article{min-height:0;padding:28px}.core-grid i{margin-top:38px}.core-grid h3{font-size:29px}.workflow-steps{grid-template-columns:1fr;margin-top:50px}.workflow-steps li,.workflow-steps li+li{border-right:0;border-bottom:1px solid #31434d;padding:20px 0 26px 22px}.workflow-steps h3{margin-top:20px}.sales-paths{grid-template-columns:1fr;margin-top:50px}.sales-paths article,.sales-paths article+article{border-left:0;min-height:0;padding:26px 0 32px}.sales-paths h3{font-size:30px;margin-top:24px}.workflow-connection{font-size:26px;margin-top:30px}}
 
 /* Figma frame alignment: header participates in layout; hero retains its desktop composition. */
 .site-header{backdrop-filter:blur(18px);background:rgba(7,16,22,.87);position:fixed}
@@ -109,7 +118,7 @@ html,body{max-width:100%;overflow-x:hidden}
 @media (min-width:761px){
   .demo{align-items:center;display:grid;min-height:85vh}
   html{scroll-snap-type:y mandatory}
-  .hero,.challenge,.workspace,.core-capabilities,.government-resellers,.workflow,.why-jpj,.demo,footer{scroll-snap-align:start;scroll-snap-stop:always}
+  .hero,.challenge,.workspace,.core-capabilities,.government-resellers,.workflow,.why-jpj,.govstore-product,.demo,footer{scroll-snap-align:start;scroll-snap-stop:always}
 }
 
 .brand img{display:block;height:32px;width:auto}
@@ -135,6 +144,12 @@ html,body{max-width:100%;overflow-x:hidden}
 .government-list span{color:var(--text-muted);font:11px 'IBM Plex Mono'}
 .government-list h3{font-size:23px;margin:0 0 11px}
 .government-list p{font-size:14px}
+
+/* GovStore shares the primary-product composition while retaining its lighter-weight procurement role. */
+.govstore-product .store-preview{background:#f5f7fb}
+
+/* Match the vertically centered copy-and-list balance used by the Government Resellers section. */
+.challenge,.core-capabilities{align-items:center}
 
 @media (max-width:760px){
   .government-resellers{min-height:0;padding-block:86px}

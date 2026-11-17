@@ -1,6 +1,6 @@
-# JPJ SI Website
+# John Paul Jones Super Intelligence Website
 
-A responsive, single-page marketing site for **JPJ SI**, an intelligent CRM for government resellers.
+A responsive, single-page marketing site for **John Paul Jones Super Intelligence**, featuring GovCRM for connected business management and GovStore for contract-aware purchasing.
 
 ## Preview locally
 
@@ -33,7 +33,7 @@ From the project folder in the Visual Studio Code terminal:
 
 ```powershell
 git add index.html styles.css assets README.md
-git commit -m "Build JPJ SI landing page"
+git commit -m "Build John Paul Jones Super Intelligence landing page"
 git branch -M main
 git remote add origin https://github.com/IreneKuoAZ/jpj-website.git
 git push -u origin main
